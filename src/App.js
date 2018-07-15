@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { CardList } from './CardList';
 import SearchBox from './SearchBox';
 import { robots } from './robots';
-
+import './app.css'
 export class App extends Component {
   constructor() {
     super();
-    
+
     this.state = {
       robots: robots,
       searchField: ''
@@ -25,7 +25,7 @@ export class App extends Component {
   render() {
     return (
       <div className='tc'>
-        <h1>RoboFriends</h1>
+        <h1 className='f1'>RoboFriends</h1>
         <SearchBox onSearchChange={this.onSearchChange}/>
         <CardList robots={this.filteredRobots()}/>
       </div>
