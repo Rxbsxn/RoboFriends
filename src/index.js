@@ -3,9 +3,9 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
-import { App } from './containers/App';
+import App from './containers/App';
 import { searchRobots } from './reducers';
-import { Provider, connect } from 'react-redux';
+import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
 
 const store = createStore(searchRobots)
