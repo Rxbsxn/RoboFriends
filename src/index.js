@@ -1,13 +1,19 @@
+import 'tachyons';
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider, connect } from 'react-redux';
-import './index.css';
+import { createStore } from 'redux';
 import { App } from './containers/App';
+import { searchRobots } from './reducers';
+import { Provider, connect } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
-import 'tachyons';
+
+const store = createStore(searchRobots)
 
 ReactDOM.render(
-  <App/>,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
 );
 registerServiceWorker();
