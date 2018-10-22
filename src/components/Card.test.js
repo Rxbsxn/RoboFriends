@@ -5,3 +5,6 @@ import React from 'react';
 it('expect to render component', () => {
   expect(shallow(<Card />).length).toEqual(1);
 })
+
+//shallow - headless
+//mount - normal
