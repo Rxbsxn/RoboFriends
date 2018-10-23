@@ -14,7 +14,7 @@ describe('searchRobots reducer', () => {
     )
   })
 
-  it('should handle CHANGE_SEARCHFIELD', () => {
+  it('should handle CHANGE_SEARCH_FIELD', () => {
     expect(
       reducers.searchRobots(initialStateSearch, {
         type: types.CHANGE_SEARCH_FIELD,
