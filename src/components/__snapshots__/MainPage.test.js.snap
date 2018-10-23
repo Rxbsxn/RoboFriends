@@ -25,7 +25,7 @@ ShallowWrapper {
       "children": Array [
         <Header />,
         <SearchBox
-          searchChange={undefined}
+          onSearchChange={undefined}
 />,
         <Scroll>
           <ErrorBoundry>
@@ -53,7 +53,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "searchChange": undefined,
+          "onSearchChange": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -108,7 +108,7 @@ ShallowWrapper {
         "children": Array [
           <Header />,
           <SearchBox
-            searchChange={undefined}
+            onSearchChange={undefined}
 />,
           <Scroll>
             <ErrorBoundry>
@@ -136,7 +136,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "searchChange": undefined,
+            "onSearchChange": undefined,
           },
           "ref": null,
           "rendered": null,

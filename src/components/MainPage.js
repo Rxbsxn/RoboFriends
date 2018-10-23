@@ -23,7 +23,7 @@ export class MainPage extends Component {
     return (
       <div className='tc'>
         <Header />
-        <SearchBox searchChange={onSearchChange}/>
+        <SearchBox onSearchChange={onSearchChange}/>
         <Scroll>
           { isPending ? <h1>Loading</h1> :
             <ErrorBoundry>
