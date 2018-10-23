@@ -1,4 +1,4 @@
-import { 
+import {
   CHANGE_SEARCH_FIELD,
   REQUEST_ROBOTS_FAILED,
   REQUEST_ROBOTS_SUCCESS,
@@ -19,9 +19,8 @@ export const searchRobots = (state = initialStateSearch, action = {}) => {
 }
 
 const initialStateRobots = {
-  isPending: false,
+  isPending: true,
   robots: [],
-  error: ''
 }
 
 export const requestRobots = (state = initialStateRobots, action = {}) => {
@@ -31,7 +30,7 @@ export const requestRobots = (state = initialStateRobots, action = {}) => {
     case REQUEST_ROBOTS_SUCCESS:
       return { ...state, robots: action.payload, isPending: false };
     case REQUEST_ROBOTS_FAILED:
-      return  { ...state, error: action.payload, isPending: false };
+      return  { ...state, error: action.payload };
     default:
       return state;
   }
