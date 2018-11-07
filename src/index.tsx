@@ -1,7 +1,7 @@
 import 'tachyons';
 import './index.css';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import App from './containers/App';
 import { createLogger } from "redux-logger";
